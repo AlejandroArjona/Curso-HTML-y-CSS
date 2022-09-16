@@ -7,29 +7,21 @@
     <title>Calendario</title>
 </head>
 <body> 
-    <main>
-        <form action="">
-            <label for="Nombre">
-                <span>¿Cual es tu nombre?</span><!--Autocompete ayuda al usuario a llenar un formulario mas rapido-->
-                <input type="text" id="Nombre" name="Nombre" autocomplete="name" required>
-            </label><!--Required indica al usuario que un campo es obligadorio llenar-->
+    <main><!--Esta es la manera mas sencilla de hacer un select pero no la mejor-->
+        <select name="Cursos" id="">
+            <option value="JavaScript">JavaScript</option>
+            <option value="HTML5">HTML5</option>
+            <option value="CSS3">CSS3</option>
+            <option value="Web Standars">Web Standars</option>
+        </select>
 
-            <label for="Correo">
-                <span>¿Cual es tu correo?</span>
-                <input type="email" id="Correo" name="Correo" autocomplete="email" required>
-            </label>
-
-            <label for="Pais">
-                <span>¿Cual es tu pais</span>
-                <input type="text" id="Pais" name="Pais" autocomplete="country" required>
-            </label>
-
-            <label for="CP">
-                <span>Cual es tu codigo postal</span>
-                <input type="text" id="CP" name="CP" autocomplete="postal-code" required>
-            </label>
-            <input type="submit">
-        </form>
+        <input list="cursos"><!--De esta manera se hara mas intuitivo para el usuario-->
+        <datalist id="cursos">
+            <option value="JavaScript"></option>
+            <option value="HTML5"></option>
+            <option value="CSS3"></option>
+            <option value="Web Standars"></option>
+        </datalist>
     </main>
 </body>
 </html>
