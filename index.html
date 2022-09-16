@@ -8,25 +8,10 @@
 </head>
 <body> <!--Es la manera en como hacer un calendario dentro de un formulario-->
     <form action="">
-        <label for="Hora">
-            <span>Hora</span>
-            <input type="time" id="Hora" name="Hora">
-        </label>
-
-        <label for="Dia">
-            <span>Dia</span>
-            <input type="date" id="Dia" name="Dia">
-        </label>
-
-        <label for="Semana">
-            <span>Semana</span>
-            <input type="week" id="Semana" name="Semana">
-        </label>
-
-        <label for="Mes">
-            <span>Mes</span>
-            <input type="month" id="Mes" name="Mes">
-        </label>
+        <label for="Calendario">
+            <span>Calendario</span>
+            <input type="datetime-local" id="Calendario" name="Calendario">
+        </label><!--Con el atributo datetimelocal podemos hacer un calendario con 4 datos en un solo espacio-->
         <input type="submit">
     </form>
 </body>
