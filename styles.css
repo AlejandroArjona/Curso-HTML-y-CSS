@@ -1,15 +1,30 @@
-p{
-    font-size: 40px;
+.main-nav {
+    margin-top: 10px;
+    list-style: none; /*sirve para dar estilo al bullet de una lista desordenada*/
+    padding-left: 0px;/*Es un espacio interno en un contenedor*/
+    background-color: #13a4a4;/*Agrega un color al fondo*/
+}
+
+.main-nav__item {
+    display: inline-block;/*Permite colocar los elementos en una pocision especifica*/
+}
+
+.main-nav__item a { /*Todas las etiquetas a que estan dentro de la clase, aplica los estilos*/
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: red;
+}
+/*Para mandar a llamar a una pseudoclase se usa : y define el estilo de un estado especial de un elemento*/
+.main-nav__item a:hover{/*Hover es cuando el cursor pasa por encima de*/
     color: blue;
 }
 
-/*Class*/
-.parrafo {
+.main-nav__item a:active {/*Es cuando ya hacemos el click sobre algo*/
     color: red;
 }
-
-/*ID*/
-#texto {
-    color: green;
-    font-size: 24;
+/*Un pseudoelemento se manda a llamar con :: y define el estilo de una parte especifica de un elemento*/
+.main-nav__item a::after {
+    content: " | ";
 }
