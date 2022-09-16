@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formularios</title>
+    <title>Calendario</title>
 </head>
-<body>
-    <form action=""> <!--Es semantico y permite hacer un formulario-->
-        <label for="Nombre"> <!--Añadimos el para que de dicho form-->
-            <span>¿Cual es tu nombre? </span> <!--Pedimos al usuario que dato queremos-->
-            <input type="text" id="Nombre" placeholder="Tu nombre"> <!--Cuadrito donde el usuario interactua-->
-        </label> <!--Placeholder da una guia intuitiva al usuario-->
-
-        <label for="Inicio-platzi"> 
-            <span>¿Que dia comenzaste en platzi? </span> 
-            <input type="date" id="Inicio-platzi"> 
+<body> <!--Es la manera en como hacer un calendario dentro de un formulario-->
+    <form action="">
+        <label for="Hora">
+            <span>Hora</span>
+            <input type="time" id="Hora" name="Hora">
         </label>
 
-        <label for="Horario"> 
-            <span>¿En que horario estudias? </span> 
-            <input type="time" id="Horario"> 
+        <label for="Dia">
+            <span>Dia</span>
+            <input type="date" id="Dia" name="Dia">
         </label>
+
+        <label for="Semana">
+            <span>Semana</span>
+            <input type="week" id="Semana" name="Semana">
+        </label>
+
+        <label for="Mes">
+            <span>Mes</span>
+            <input type="month" id="Mes" name="Mes">
+        </label>
+        <input type="submit">
     </form>
 </body>
 </html>
