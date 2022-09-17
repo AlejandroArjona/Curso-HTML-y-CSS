@@ -1,7 +1,20 @@
-html {
-    font-size: 62.5%;/*El determinado de este tag es 16px pero con esta regla se reduce a 10px*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-p {
-    font-size: 1.6rem;/*un rem es siempre igual al por defecto del tag html y no cambia su base*/
+main {
+    width: 100vw;
+    height: 100vw;
+    background-color: purple;
+}
+
+section {
+    width: 80%;
+    min-width: 320px;/*Declara el minimo de px que puede tener la etiqueta y la deja sin margin*/
+    max-width: 500px;/*Declara hasta que punto va a crecer la etiqueta seleccionada*/
+    min-height: 500px; 
+    margin: 0 auto;
+    background-color: red;
 }
