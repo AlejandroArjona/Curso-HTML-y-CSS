@@ -1,7 +1,7 @@
-.text-container {
-    font-size: 1.5em;/*Un em tomara la cantidad de pixeles del padre directo (16px por defecto)*/
+html {
+    font-size: 62.5%;/*El determinado de este tag es 16px pero con esta regla se reduce a 10px*/
 }
 
-div p {
-    font-size: 1.5em;
+p {
+    font-size: 1.6rem;/*un rem es siempre igual al por defecto del tag html y no cambia su base*/
 }
