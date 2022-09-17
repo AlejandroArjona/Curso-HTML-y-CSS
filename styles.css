@@ -4,17 +4,23 @@
     padding: 0;
 }
 
-main {
-    width: 100vw;
-    height: 100vw;
-    background-color: purple;
+.parent {
+    border: 2px black dotted;
+    display: inline-block;
 }
 
-section {
-    width: 80%;
-    min-width: 320px;/*Declara el minimo de px que puede tener la etiqueta y la deja sin margin*/
-    max-width: 500px;/*Declara hasta que punto va a crecer la etiqueta seleccionada*/
-    min-height: 500px; 
-    margin: 0 auto;
+.box{
+    display: inline-block;
     background-color: red;
+    width: 100px;
+    height: 100px;
 }
+
+#two {
+    background-color: green;
+    position: relative;
+    bottom: 15px;
+    right: 15px;
+}
+/*Con position static no podemos cambiar los margenes, pero con las demas si, ya que son positions que podemos alterar
+a nuestro gusto y necesidad*/
