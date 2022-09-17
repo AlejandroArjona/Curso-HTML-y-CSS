@@ -1,11 +1,3 @@
-h2 + p {
+div p {
     color: red;
 }
-
-/*Los combinadores nos permiten combinar multiples selectores y crear
-una mayor especificidad.
-
-div + p{} = Hermano adyacente o cercano
-div + ~ p{} = Hermano general
-div > p{} = Hijo
-div p = descendiente

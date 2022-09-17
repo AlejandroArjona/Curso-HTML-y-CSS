@@ -8,14 +8,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body> 
-    <div>
-        <h2>Soy un h2</h2>
-        <p>Soy un parrafo</p>
-        <h2>soy un h2<h2>
-        <h3>Soy un h3</h3>
-        <p>Soy un parrafo</p>
-        <h2>Soy un h2</h2>
-        <p>Soy un parrafo</p>
+    <div><!--Los hermanos dentro de esta etiqueta seran hermanos generales-->
+        <article>
+            <p>Soy un texto</p><!--Estos p  no son hijos directos de div, sino de article-->
+        </article>
+        <article>
+            <p>Soy un texto</p>
+        </article>
+        <section>
+            <div>
+                <p>Soy un texto</p>
+            </div>
+        </section>
+        <p>soy un texto</p>
     </div>
 </body>
 </html>
