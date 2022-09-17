@@ -1,12 +1,8 @@
-* {/*Esto es el selector universal*/
-    box-sizing: border-box;/*Es para que se tomen en cuenta el padding y el border para el width del 100 %*/
-    padding: 0;
-    margin: 0;
+html {
+    font-size: 75%;/*Le pedimos que la fuente sea del 75% de la determinada (16px)*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/*Cambio de fuente del texto*/
 }
 
-main {
-    width: 100%;
-    height: 500px;
-    border: 10px solid grey;
-    padding: 20px 35px; /*El primer digito es para top y bottom, y el segundo digito es para left y right*/
+h1 {
+    font-size: inherit;/*Como h1 no hereda el font-size de html usamos inherit*/
 }
